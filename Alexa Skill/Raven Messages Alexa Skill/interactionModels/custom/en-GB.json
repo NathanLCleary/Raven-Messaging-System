@@ -1,0 +1,96 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "raven messaging",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "MessageWhoIntent",
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "samples": [
+            "raven who {name}",
+            "raven name is {name}",
+            "the name is {name}",
+            "Send a raven to {name}",
+            "reply to {name}",
+            "respond to {name}",
+            "Mention to {name}",
+            "Ask {name}",
+            "Tell {name}",
+            "{name}",
+            "Can you message {name}",
+            "Message {name}"
+          ]
+        },
+        {
+          "name": "MessageContentIntent",
+          "slots": [
+            {
+              "name": "message",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "raven what is {message}",
+            "raven message is {message}",
+            "Raven content is {message}",
+            "the raven message is {message}",
+            "the message is {message}",
+            "and the {message}",
+            "the {message} is",
+            "can you {message}",
+            "a {message}",
+            "did {message}",
+            "when {message}",
+            "where {message}",
+            "how {message}",
+            "what {message}",
+            "to {message}",
+            "will {message}",
+            "if {message}",
+            "that {message}"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "7"
+}

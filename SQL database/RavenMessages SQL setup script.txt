@@ -1,0 +1,5 @@
+CREATE TABLE RavenMessages (Id int IDENTITY(1,1) PRIMARY KEY, time DateTime, topic varchar(255), message varchar(255));
+CREATE TABLE Users (userId int IDENTITY(1,1) PRIMARY KEY,  username varchar(255), password varchar(255));
+
+INSERT INTO RavenMessages (time,topic,message) VALUES ('2023-04-20 12:30:03', 'Topic/Test', 'This is the first message');
+INSERT INTO Users (username, password) VALUES ('testUser', 'testPassword');

@@ -1,0 +1,20 @@
+{
+  "name": "ravenfunctions",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fboucher/CloudEn5Minutes.git"
+ },
+ "author": "",
+ "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "mysql2-promise": "^0.1.4",
+    "tedious": "^2.1.1"
+  }
+}

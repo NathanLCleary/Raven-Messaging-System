@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#7D9782"
+    android:padding="5dp">
+
+    <!--<ImageButton
+        android:layout_marginTop="10dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/next_arrow_free_icon_fidssws"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="changeScreen"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@android:color/transparent"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="-22dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="80dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/raven_icon__2_" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Here you can change your account information"
+            android:gravity="center"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Please fill out this form."
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:minHeight="48dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Old username: "
+                android:gravity="center"
+                android:textSize="17sp"
+                 />
+            <EditText
+                android:id="@+id/old_usernameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:minHeight="48dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Old Password: "
+                android:gravity="center"
+                android:textSize="17sp"
+                />
+            <EditText
+                android:id="@+id/old_passwordET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:minHeight="48dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="New Username: "
+                android:gravity="center"
+                android:textSize="17sp"
+                />
+            <EditText
+                android:id="@+id/new_usernameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:minHeight="48dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="New Password: "
+                android:gravity="center"
+                android:textSize="17sp"
+                />
+             <EditText
+                android:id="@+id/new_passwordET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                 android:inputType="textPassword"
+                 />
+    </LinearLayout>
+        <!--android:textColor="#FFFBFF"
+        android:textColorHint="#FFFBFF"
+        -->
+
+
+
+
+        <!--android:textColor="#FFFBFF"
+        android:textColorHint="#FFFBFF"
+        -->
+
+        <TextView
+            android:id="@+id/displayError1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E2725B"
+            android:text=""
+            android:textSize="19sp"
+            android:layout_marginBottom="10dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#292F36"
+                android:onClick="update"
+                android:text="Update"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white" />
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#292F36"
+                android:onClick="cancel"
+                android:text="Cancel"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

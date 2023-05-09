@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/connection"
+        android:orderInCategory="100"
+        android:title="Connect/Disconnect"
+        app:showAsAction="never"
+        android:actionLayout="@layout/item_layout"
+        android:onClick="onGroupItemClick"/>
+    <item
+        android:id="@+id/notConnection"
+        android:orderInCategory="100"
+        android:title="Connect"
+        android:visible="false"
+        app:showAsAction="never"
+        android:actionLayout="@layout/item_layout"
+        android:onClick="onGroupItemClick"/>
+    <item
+        android:id="@+id/updateInfo"
+        android:icon="@mipmap/log_out_foreground"
+        android:orderInCategory="100"
+        android:title="Settings"
+        app:showAsAction="never"
+        android:onClick="onGroupItemClick"/>
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="Log out"
+        app:showAsAction="never"
+        android:onClick="onGroupItemClick"/>
+
+</menu>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#7D9782"
+    android:padding="5dp">
+
+    <!--<ImageButton
+        android:layout_marginTop="10dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/next_arrow_free_icon_fidssws"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="changeScreen"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@android:color/transparent"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="-22dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="30dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="80dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:srcCompat="@drawable/raven_icon__2_" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Welcome to Raven Messages."
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Please select a username."
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/UsernameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Username"
+            android:minHeight="48dp" />
+
+
+        <!--android:textColor="#FFFBFF"
+        android:textColorHint="#FFFBFF"
+        -->
+        <EditText
+            android:id="@+id/passwordET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Password"
+            android:minHeight="48dp"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:id="@+id/displayError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E2725B"
+            android:text=""
+            android:textSize="19sp"
+            android:layout_marginBottom="10dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#292F36"
+                android:onClick="logIn"
+                android:layout_marginRight="20dp"
+                android:text="Log In"
+                android:textColor="@color/white" />
+
+            <!-- #D6FFDE -->
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#292F36"
+                android:onClick="signUp"
+                android:text="Sign up"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
