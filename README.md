@@ -8,9 +8,9 @@
 
 | **Category** | production |
 |--------------|------------------|
-| **Languages** | java/kotlin |
+| **Languages** | java/python |
 | **Technologies** | android/messaging/voice-recognition |
-| **Frameworks** | none |
+| **Frameworks** | alexa-skills-kit |
 | **Status** | production |
 | **Year** | 2024 |
 | **Featured** | false |
@@ -55,11 +55,7 @@ cd Raven-Messaging-System
 
 ### **Step 2: Install Dependencies**
 ```bash
-# For Maven projects
-mvn install
-
-# For Gradle projects
-./gradlew build
+pip install -r requirements.txt
 ```
 
 ### **Step 3: Configuration**
@@ -67,8 +63,7 @@ No additional configuration required
 
 ### **Step 4: Run Application**
 ```bash
-# Install on Android device
-./gradlew installDebug
+python main.py
 ```
 
 ---
@@ -91,7 +86,7 @@ No additional configuration required
 
 ### **Programming Languages**
 - **Java**: Android mobile development
-- **Kotlin**: Modern Android development
+- **Python**: Core application logic
 
 ### **Frameworks & Libraries**
 - **Android Development**: Mobile application platform
